@@ -1,8 +1,8 @@
 # Cloudflare Pages 部署记录清理工具
 
-解决Cloudflare Pages 部署记录过多，导致无法创建新部署，无法删除项目的问题。
+解决 Cloudflare Pages 部署记录过多，导致无法创建新部署，无法删除项目的问题。
 
-这是一个用于清理 Cloudflare Pages 项目旧部署记录的自动化工具。该工具会保留每个项目最新的 10 个部署记录,删除更早的部署以节省空间。
+这是一个用于清理 Cloudflare Pages 项目旧部署记录的自动化工具。该工具会保留每个项目最新的 10 个部署记录，删除更早的部署以节省空间。
 
 ## 功能特点
 
@@ -13,17 +13,19 @@
 - 循环处理直到清理完所有旧记录
 - 支持通过 GitHub Actions 自动运行
 
-## 使用方法（推荐GitHub Actions 自动运行）
+---
+
+## 使用方法（推荐 GitHub Actions 自动运行）
 
 ### 1. Fork 本项目
 
 <div align="center">
 
-### 点击下方按钮一键 Fork
+#### 点击下方按钮一键 Fork
 
 [![Fork delete-cloudflare-deployments](https://img.shields.io/github/forks/vbskycn/delete-cloudflare-deployments?label=Fork&style=for-the-badge&logo=github)](https://github.com/vbskycn/delete-cloudflare-deployments/fork)
 
-
+</div>
 
 ### 2. 获取必要信息
 
@@ -63,6 +65,8 @@ CF_ACCOUNT_ID=your_cloudflare_account_id
 
 ![image-20250107150715924](assets/image-20250107150715924.png)
 
+---
+
 ## GitHub Actions 配置
 
 要设置自动运行，需要在 GitHub 仓库中配置以下 Secrets：
@@ -73,7 +77,7 @@ CF_ACCOUNT_ID=your_cloudflare_account_id
    - CF_API_TOKEN
    - CF_ACCOUNT_ID
 
-
+---
 
 ## 常见问题
 
@@ -87,6 +91,8 @@ CF_ACCOUNT_ID=your_cloudflare_account_id
 
 如果你的部署记录太多，每一次运行可能需要比较长的时间。
 
+---
+
 如有问题，请访问 [GitHub Issues](https://github.com/vbskycn/delete-cloudflare-deployments/issues)
 
-cloudflare pages 官方脚本：[https://pub-505c82ba1c844ba788b97b1ed9415e75.r2.dev/delete-all-deployments.zip](https://pub-505c82ba1c844ba788b97b1ed9415e75.r2.dev/delete-all-deployments.zip)
+Cloudflare Pages 官方脚本：[删除部署记录脚本](https://pub-505c82ba1c844ba788b97b1ed9415e75.r2.dev/delete-all-deployments.zip)
